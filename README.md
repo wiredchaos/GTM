@@ -1,50 +1,97 @@
-# GTM / AGENTROPOLIS
+# AGENTROPOLIS Distribution Layer
 
-Evergreen GTM Distribution OS and AGENTROPOLIS distribution engine.
+Shared GTM and UGC infrastructure for the AGENTROPOLIS Intelligence Grid.
 
-This repository holds the reusable, white-label distribution architecture for agentic marketing, SEO, AEO, GEO, listicle discovery, holder-powered commerce, commission tracking, analytics, and governance.
+This repository owns the reusable, white-label distribution architecture used across districts, projects, applications, communities, creator systems, marketplaces, and service networks.
 
 ## Core Purpose
 
-GTM / AGENTROPOLIS is the evergreen distribution layer that can be reused across projects, brands, NFT communities, creator businesses, SaaS products, marketplaces, and local service networks.
+AGENTROPOLIS uses one citywide Distribution Layer.
 
-It is designed to make projects discoverable, machine-citable, and commercially useful without relying on directory spam or blind automation.
+Every district connects through a district distribution pack. Districts configure the shared engines with their own identity, audience, offers, channels, campaigns, templates, KPIs, permissions, and approval rules.
 
-## Relationship to Mutant Arcade Hub
+Districts do not receive cloned GTM systems.
 
-- `wiredchaos/GTM` = evergreen GTM / AGENTROPOLIS distribution OS
-- `wiredchaos/mutant-arcade-hub` = SolOnChain-specific gameplay wrapper
+## Core Engines
 
-The arcade layer can trigger distribution. The GTM layer owns the reusable marketing, listing, SEO/AEO/GEO, commission, and agent workflow logic.
+### GTM Engine
+
+- positioning and messaging
+- SEO, AEO, and GEO
+- AI-search visibility
+- GitHub discoverability
+- campaign orchestration
+- community distribution
+- publishing workflows
+- analytics and attribution
+
+### UGC Engine
+
+- user-generated content intake
+- creator and ambassador campaigns
+- referrals
+- reviews and testimonials
+- case studies
+- social-proof collection
+- contributor consent
+- moderation
+- rewards and commission events
+
+## Shared Services
+
+- Campaign Manager
+- Workflow Engine
+- Publishing Queue
+- Asset Library
+- Template Registry
+- Analytics
+- Attribution
+- Governance
+- Approval Pipeline
+- Audit Logging
+- Permissions
+- Connector Interface
+- District Adapter Runtime
 
 ## Guardrails
 
 - No blind public submissions
 - No directory spam
-- No fake authority claims
+- No fabricated authority claims or metrics
 - No raw credential ingestion
-- Human approval required before publishing, profile edits, paid ads, outreach, production deployment, or public submissions
-- Use MCP/tool automation for research, monitoring, drafting, validation, and drift detection first
+- No untrusted content directly triggering tool execution
+- Human approval required for consequential public actions unless a district explicitly enables a narrower approved automation path
+- Third-party systems may only appear as clearly labeled external integrations
+- Third-party company names, trademarks, and brands must not be encoded as AGENTROPOLIS districts
 
-## Key Modules
+## Architecture
 
-- Canonical Entity Packets
-- Holder Listing Intake
-- SEO / AEO / GEO Content System
-- Listicle Strategy
-- GitHub Discoverability Layer
-- MCP / API Research Layer
-- Agentic Marketing Swarm
-- Drift Monitoring
-- Champion / Challenger Optimization
-- GTM Intelligence Reports
-- Commission Tracking
+See [`docs/AGENTROPOLIS_DISTRIBUTION_LAYER.md`](docs/AGENTROPOLIS_DISTRIBUTION_LAYER.md).
+
+```text
+AGENTROPOLIS Intelligence Grid
+└── Distribution Layer
+    ├── GTM Engine
+    ├── UGC Engine
+    ├── Shared Services
+    └── District Distribution Packs
+```
 
 ## Immediate Build Targets
 
-1. Canonical entity schema
-2. Holder/service listing schema
-3. Distribution campaign schema
+1. District pack schema
+2. GTM campaign schema
+3. UGC submission and consent schema
 4. Approval workflow
-5. Analytics and commission model
-6. AGENTROPOLIS connector interface
+5. Analytics and attribution model
+6. Publishing queue
+7. Audit event schema
+8. AGENTROPOLIS connector interface
+
+## Final Principle
+
+Build distribution like infrastructure.
+
+Configure it by district.
+
+Govern it like a system capable of affecting every brand connected to the Grid.
